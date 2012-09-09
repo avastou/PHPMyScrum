@@ -12,6 +12,9 @@ class SprintsController extends AppController {
             'conditions' => array(
                 'Sprint.disabled' => 0,
             ),
+            'order' => array(
+                'Sprint.startdate' => 'asc',
+            ),
         );
         $this->set('sprints', $this->paginate());
     }
