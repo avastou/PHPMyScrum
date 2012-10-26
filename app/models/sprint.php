@@ -103,6 +103,9 @@ class Sprint extends AppModel {
             'conditions' => array(
                 'Sprint.disabled' => 0,
             ),
+            'order' => array(
+                'Sprint.startdate' => 'asc',
+            ),
         );
         return $this->find('all', $conditions);
     }
