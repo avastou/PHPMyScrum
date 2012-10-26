@@ -20,6 +20,7 @@ Feature
 * Output data by Excel and CSV format
 
 How to install
+* Clone Application (cd %DOCROOT% and git clone ...)
 * Create database 
   create database phpmyscrum;
   grant all on phpmyscrum.* to user@localhost identified by 'password';
@@ -30,7 +31,6 @@ How to install
 * Execute command below.
   cd ./phpmyscrum/app
   ../cake/console/cake schema create
-  cd ./phpmyscrum/app
   ../cake/console/cake pms_install
   ../cake/console/cake migration all
 
@@ -44,6 +44,5 @@ License
 
 Author
 * Ryuzee <ryuzee@users.sourceforge.jp>
-    http://www.phpmyscrum.info
     http://www.ryuzee.com
     http://twitter.com/ryuzee
