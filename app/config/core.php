@@ -318,4 +318,9 @@
 	// template
 	Configure::write('Config.mail_subject_reset_password', __('Reset password', true));
 
+	// Japanese locale settings
+	Configure::write('Config.language', 'ja');
+	setlocale(LC_ALL, 'ja_JP.UTF-8');
+	ini_set("date.timezone", "Asia/Tokyo");
+
 ?>
